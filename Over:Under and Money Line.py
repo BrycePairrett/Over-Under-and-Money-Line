@@ -6,6 +6,7 @@ Created on Sun May  3 11:34:56 2020
 @author: bryce
 """
 
+
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
@@ -185,6 +186,14 @@ def overUnderPie():
     warnings.filterwarnings("ignore", category=DeprecationWarning)
     plt.show()
     
+testMoneyLine(NBA)
 
-    
+testGamesWon(NBA)
+
+overUndercalc()
+
+overUnderSim(500) # i need to run this in order to have winList for the scatter plot
+
+overUnderPie()
+
     
