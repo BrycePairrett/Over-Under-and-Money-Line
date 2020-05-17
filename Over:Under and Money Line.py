@@ -6,14 +6,11 @@ Created on Sun May  3 11:34:56 2020
 @author: bryce
 """
 
-
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import random 
-import pandas as pd
-import os
 import warnings
 
 df1 = pd.read_excel(r'/Users/bryce/Documents/Python/NBA_PROJECT/nba odds 2018-19.xlsx', sheet_name = 'OVER UNDERS')
@@ -157,7 +154,7 @@ def testMoneyLine(division):# this is test function that calls the moneyLine fun
         mlList.append(x)
         
     df = pd.DataFrame({'team':NBA, 'val':mlList})
-    ax = df.plot.bar(x= 'team', y = 'val')  
+    df.plot.bar(x= 'team', y = 'val')  
     
     
 def testGamesWon(division): # this return the record of each team 
@@ -195,5 +192,6 @@ overUndercalc()
 overUnderSim(500) # i need to run this in order to have winList for the scatter plot
 
 overUnderPie()
+
 
     
